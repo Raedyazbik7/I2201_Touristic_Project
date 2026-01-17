@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Monuments Tour | Feedback</title>
+  <meta name="description" content="Send feedback about this touristic website." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand"><span class="brand__dot"></span><span>World Monuments Tour</span></div>
+      <div class="nav__links">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="gallery.html">Gallery</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="feedback.html">Feedback</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <h1 style="margin:0 0 10px;">Feedback</h1>
+    <p>Your message is validated in the browser and saved locally (localStorage) so you can demonstrate functionality during the final.</p>
+
+    <form class="form" id="feedback-form" novalidate>
+      <div class="field">
+        <label class="label" for="name">Name</label>
+        <input class="input" id="name" name="name" type="text" autocomplete="name" />
+        <div class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="email">Email</label>
+        <input class="input" id="email" name="email" type="email" autocomplete="email" />
+        <div class="error" aria-live="polite"></div>
+      </div>
+
+      <div class="field">
+        <label class="label" for="message">Message</label>
+        <textarea class="textarea" id="message" name="message"></textarea>
+        <div class="error" aria-live="polite"></div>
+      </div>
+
+      <button class="btn" type="submit">Submit</button>
+      <div class="status" id="form-status" aria-live="polite"></div>
+    </form>
+  </main>
+<footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> World Monuments Tour • Built with HTML/CSS/JS</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Monuments Tour | About</title>
+  <meta name="description" content="About the student and the purpose of the World Monuments Tour project." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand"><span class="brand__dot"></span><span>World Monuments Tour</span></div>
+      <div class="nav__links">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="gallery.html">Gallery</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="feedback.html">Feedback</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <h1 style="margin:0 0 10px;">About</h1>
+
+    <article class="detail" style="padding:18px;">
+      <h2 style="margin:0 0 8px;">Student</h2>
+      <p>My name is <strong>Raed Yazbik</strong>. I built this small front‑end project as practice for an HTML/CSS/JavaScript course, combining a clean layout with interactive features. I’m interested in travel and cultural history, so I picked monuments that represent different regions and time periods.</p>
+
+      <h2>Project purpose</h2>
+      <p>I chose these monuments because each one highlights a different kind of human achievement — engineering (Eiffel Tower), ancient construction (Giza), sacred space (Kaaba), urban entertainment architecture (Colosseum), large‑scale defense (Great Wall), art and symmetry (Taj Mahal), and a city carved into stone (Petra). The goal was to demonstrate semantic HTML structure, responsive CSS that adapts to smaller screens, and JavaScript interactions such as an active navigation state, a gallery lightbox, and a validated feedback form that stores messages locally.</p>
+
+      <h2>Features implemented</h2>
+      <ul>
+        <li>Consistent navigation menu on every page</li>
+        <li>Responsive layout with 2 breakpoints (768px / 480px)</li>
+        <li>Gallery grid with hover effects and lightbox preview</li>
+        <li>Feedback form with client-side validation and success state</li>
+        <li>Active navigation highlight based on current page</li>
+      </ul>
+
+      <h2>Tools used</h2>
+      <ul>
+        <li>HTML (structure and semantics)</li>
+        <li>CSS (layout, responsiveness, accessibility)</li>
+        <li>JavaScript (interactions + validation)</li>
+      </ul>
+    </article>
+  </main>
+<footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> World Monuments Tour • Built with HTML/CSS/JS</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

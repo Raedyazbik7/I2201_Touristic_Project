@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Monuments Tour | Home</title>
+  <meta name="description" content="A touristic website showcasing famous monuments with galleries, details, and a feedback form." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand"><span class="brand__dot"></span><span>World Monuments Tour</span></div>
+      <div class="nav__links">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="gallery.html">Gallery</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="feedback.html">Feedback</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__inner">
+        <div>
+          <span class="badge">✦ Discover history • architecture • culture</span>
+          <h1>Explore iconic monuments from around the world</h1>
+          <p>Welcome to <strong>World Monuments Tour</strong> — a quick, visual trip across seven famous sites, from ancient wonders to modern engineering icons. Browse the Gallery to preview images in a lightbox, then open each monument page for history, visitor tips, and quick facts you can use to plan a future visit.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn" href="gallery.html">Browse the Gallery</a>
+            <a class="btn btn--ghost" href="feedback.html">Leave Feedback</a>
+          </div>
+        </div>
+
+        <aside class="hero__card">
+          <h2 style="margin:0 0 8px; font-size:1.1rem;">Quick tips</h2>
+          <p style="margin:0;">Use the Gallery to preview photos in a lightbox or open each monument page for details and facts.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Articles</h2>
+
+      <article class="detail" style="padding:18px;">
+        <h3 style="margin:0 0 8px;">Article 1 — (100–200 words)</h3>
+        <p>Responsible tourism is more than taking photos — it’s about protecting places so others can experience them in the future. When you visit a monument, follow posted rules, stay on marked paths, and avoid touching fragile surfaces (even stone can wear down from millions of hands). Small choices matter: carry a reusable bottle, dispose of trash properly, and support local guides or businesses that respect the site. It also helps to learn basic cultural etiquette before you arrive, especially at religious or memorial spaces where behavior and dress may be important. Finally, share responsibly: don’t geotag restricted areas, and encourage others to visit during off‑peak hours to reduce crowd pressure. Traveling thoughtfully keeps heritage alive.</p>
+      </article>
+
+      <div style="height:14px;"></div>
+
+      <article class="detail" style="padding:18px;">
+        <h3 style="margin:0 0 8px;">Article 2 — (100–200 words)</h3>
+        <p>Architecture tells a story if you know what to look for. Materials often reveal a monument’s purpose and time period: marble and inlay work can signal royal patronage, while brick, stone, and watchtowers point to military defense. Shapes matter too — arches distribute weight, domes create large interior spaces, and symmetry can reflect religious or political ideas. Before traveling, a little research goes a long way: check opening hours, ticket rules, weather, and any dress or photography restrictions. Reading a short history summary helps you notice details on site, like inscriptions, rebuilding phases, or how the monument fits into its landscape. The more context you bring, the more the place “speaks” when you arrive.</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Featured monuments</h2>
+      <div class="gallery">
+        
+        <a class="thumb" href="monument-eiffel-tower.html">
+          <img class="thumb__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Eiffel%20Tower%20Day%20Sept.%202005%20%2810%29.jpg?width=700" alt="Eiffel Tower thumbnail" />
+          <div class="thumb__cap">
+            <strong>Eiffel Tower</strong>
+            <span>Paris • France</span>
+          </div>
+        </a>
+        
+        <a class="thumb" href="monument-kaaba.html">
+          <img class="thumb__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kaaba%20Masjid%20Haraam%20Makkah.jpg?width=700" alt="Kaaba thumbnail" />
+          <div class="thumb__cap">
+            <strong>Kaaba</strong>
+            <span>Mecca • Saudi Arabia</span>
+          </div>
+        </a>
+        
+        <a class="thumb" href="monument-colosseum.html">
+          <img class="thumb__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Colosseum%20Rom.jpg?width=700" alt="Colosseum thumbnail" />
+          <div class="thumb__cap">
+            <strong>Colosseum</strong>
+            <span>Rome • Italy</span>
+          </div>
+        </a>
+        
+        <a class="thumb" href="monument-great-wall.html">
+          <img class="thumb__img" src="https://commons.wikimedia.org/wiki/Special:FilePath/Great%20Wall%20of%20China%20July%202006.JPG?width=700" alt="Great Wall of China thumbnail" />
+          <div class="thumb__cap">
+            <strong>Great Wall of China</strong>
+            <span>Northern China • China</span>
+          </div>
+        </a>
+        
+      </div>
+      <div style="margin-top:14px;">
+        <a class="btn" href="gallery.html">See all monuments</a>
+      </div>
+    </section>
+  </main>
+<footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> World Monuments Tour • Built with HTML/CSS/JS</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

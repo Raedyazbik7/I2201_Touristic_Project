@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Monuments Tour | Eiffel Tower</title>
+  <meta name="description" content="History and quick facts about Eiffel Tower." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand"><span class="brand__dot"></span><span>World Monuments Tour</span></div>
+      <div class="nav__links">
+        <a class="nav__link" href="index.html">Home</a>
+        <a class="nav__link" href="gallery.html">Gallery</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="feedback.html">Feedback</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <p><a class="btn btn--ghost" href="gallery.html">← Back to Gallery</a></p>
+
+    <article class="detail">
+      <div class="detail__hero">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Eiffel%20Tower%20Day%20Sept.%202005%20%2810%29.jpg?width=1600" alt="The Eiffel Tower in Paris, France" />
+      </div>
+
+      <div class="detail__inner">
+        <section>
+          <h1 style="margin:0 0 10px;">Eiffel Tower</h1>
+          <p>The <strong>Eiffel Tower</strong> stands on the Champ de Mars in Paris and has become one of the most recognizable landmarks on Earth. It was built for the <em>1889 Exposition Universelle</em> (World’s Fair) to celebrate France’s industrial progress and the 100th anniversary of the French Revolution. What started as a temporary exhibition structure quickly turned into a symbol of modern engineering: its iron lattice design is strong, lightweight for its size, and visually dramatic from every angle. Beyond its postcard fame, the tower represents a turning point in architecture — it proved that metal construction could be both functional and beautiful. Today, visitors use it as a viewpoint over the city, a meeting point, and a reminder of how bold design ideas can reshape a skyline.</p>
+
+          <h2 style="margin-top:18px;">History & significance</h2>
+          <p>Construction began in 1887 under engineer Gustave Eiffel’s company and finished in 1889. Many Parisians initially criticized the tower as an eyesore, but it survived partly because it became useful for radio and communication antennas. A detail worth noticing is the exposed structure: you can literally see how the beams, rivets, and arches distribute weight. At night, the tower’s sparkle lighting emphasizes the geometry and makes the ironwork feel almost like lace.</p>
+
+          <h2>Visitor notes</h2>
+          <p>For shorter lines, visit early in the morning or later in the evening, and book timed tickets online when possible. Security checks are normal, so arrive a bit early and keep bags minimal. Great photo spots include Trocadéro Plaza and the Seine riverbanks. If you have time nearby, consider a walk to the Champs‑Élysées or a river cruise for a different view of the tower and the city.</p>
+        </section>
+
+        <aside class="kv" id="facts">
+          <h3>Quick Facts</h3>
+          <ul>
+            <li><strong>Location:</strong> Paris, France</li>
+            <li><strong>Built/Origin:</strong> 1887–1889 (built for the 1889 World’s Fair)</li>
+            <li><strong>Style/Period:</strong> 19th‑century iron lattice / industrial architecture</li>
+            <li><strong>Fun fact:</strong> It was meant to be temporary, but antennas helped save it — and it’s repainted about every 7 years.</li>
+          </ul>
+          <p style="margin-top:10px;"><small>Tip: add sources in your notes (you don’t need them on the page unless required).</small></p>
+        </aside>
+      </div>
+    </article>
+  </main>
+<footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> World Monuments Tour • Built with HTML/CSS/JS</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
